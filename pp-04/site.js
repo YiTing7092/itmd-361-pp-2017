@@ -32,6 +32,7 @@ console.log('The value of x is:', x, 'It should be 5.');
 //  the global scope:
 
 function arrayEach(array, func) {
+  var i;
   for (i = 0; i < array.length; i++) {
     func(array[i]);
   }
@@ -39,11 +40,15 @@ function arrayEach(array, func) {
 
 arrayEach(['red','green','blue'], console.log);
 
-console.log(i) // should be 'undefined', not 3
+//console.log(i) // should be 'undefined', not 3
 
 //  4. Explain why this function does not modify the global
 //  variable x declared on line 5 above. Write your explanation
 //  as JavaScript comments.
+
+// Because variable x declared on line 5 is global vriable,
+// and the variable in the funtion is local variable
+// so that it won't change the value of global variable.
 
 function addTwo(x) {
   x = x + 2;
