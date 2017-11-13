@@ -9,7 +9,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== BASE STYLES ===== */
 
 
-img {
+img,
+audio {
   display: block;
   max-width: 100%;
 }
