@@ -10,10 +10,11 @@ $(document).ready(function(){
   $('#ring').on('click', function() {
     ringDoorbell();
     console.log("DoorBell Ring!!!");
+    $('#ring').append('<p>' + "DoorBell ring!" + '</p>');
   });
 
   $(document).on('keyboard' , function(event){
-    if ('keyboard'=== 'd') {
+    if (event.key === 'd') {
       ringDoorbell();
     }
   });
