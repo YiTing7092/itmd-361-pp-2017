@@ -21,6 +21,10 @@ body {
 
 /* ===== LAYOUT STYLES ===== */
 
+#click a:focus{
+  background-color: blue;
+}
+
 
 /* ===== MODULAR STYLES ===== */
 
