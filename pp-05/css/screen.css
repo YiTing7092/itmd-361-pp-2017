@@ -21,9 +21,10 @@ body {
 
 /* ===== LAYOUT STYLES ===== */
 
-#click a:focus{
-  background-color: blue;
+button{
+  cursor: pointer;
 }
+
 
 
 /* ===== MODULAR STYLES ===== */

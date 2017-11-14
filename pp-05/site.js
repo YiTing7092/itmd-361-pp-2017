@@ -10,7 +10,12 @@ $(document).ready(function(){
   $('#ring').on('click', function() {
     ringDoorbell();
     console.log("DoorBell Ring!!!");
-  }
+  });
 
+  $(document).on('keyboard' , function(event){
+    if ('keyboard'=== 'd') {
+      ringDoorbell();
+    }
+  });
 
 });
