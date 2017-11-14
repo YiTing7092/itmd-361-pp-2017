@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('#ring').append('<p>' + "DoorBell ring!" + '</p>');
   });
 
-  $(document).on('keypress' , function(event){
+  $(document).on('keypress' , function(event){ // change 'keyboard' to 'keypress' 
     if (event.key === 'd') {
       ringDoorbell();
     }
